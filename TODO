@@ -2,3 +2,4 @@ solve existing todos
 add interfaces and impls to backend
 remove sensitive info from configuration
 check react best practices
+RoomUser and User and Member class names -> make unified
