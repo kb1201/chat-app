@@ -42,13 +42,15 @@ Follow the steps below to start the entire chat application locally.
 ```bash
 cd backend-java/infra
 docker-compose up -d
+```
 
 ### 2.  Run the Backend
  Make sure your infrastructure (like PostgreSQL) is already running, then:
 
 ```bash
 cd backend-java
-gradle runShadow
+gradle bootRun
+```
 
 ### 2.  Run the Frontend
 
@@ -56,3 +58,4 @@ gradle runShadow
 cd frontend
 npm install
 npm start
+```
