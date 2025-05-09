@@ -4,6 +4,7 @@ package hr.fer.ppks.chat.controller;
 import hr.fer.ppks.chat.db.model.RoomUser;
 import hr.fer.ppks.chat.dto.MessageResponse;
 import hr.fer.ppks.chat.service.MessageService;
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
