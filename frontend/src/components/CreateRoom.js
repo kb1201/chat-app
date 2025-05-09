@@ -13,7 +13,9 @@ const CreateRoomForm = () => {
             const data = response.data
             //onRoomCreated(response.data);
             setRoomName('');
-            navigate(`/rooms/${data.id}`);
+            navigate(`/rooms/${data.id}`, {
+                state: { roomName: roomName }
+            });
         } catch (error) {
             console.error('Failed to create room:', error);
         }

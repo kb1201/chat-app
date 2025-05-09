@@ -10,7 +10,7 @@ const Chat = () => {
     const {roomId} = useParams();
     const location = useLocation();
     const {userId, token} = useContext(AuthContext);
-    const roomName = location.state?.roomName || roomId;
+    const [roomName, setRoomName] = useState(location.state?.roomName || 'Loading...');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const navigate = useNavigate();
